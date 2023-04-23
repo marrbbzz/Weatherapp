@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather Data</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <!-- tabs -->
+
+  <body id="bodyID">
+    <div><h1 id="titleID">Weather data</h1></div>
+    <nav id="button-nav">
+      <div class="button-links">
+        <button id="mode-toggle">Light/Dark</button>
+        <button id="infotab">Info</button>
+        <button id="maintab">Main</button>
+        <button id="temptab">Temperature</button>
+        <button id="windtab">Wind speed</button>
+        <button id="moretab">More</button>
+      </div>
+    </nav>
+
+    <!-- info page-->
+
+    <div id="information">
+    <div id="information2">
+      <h1 id="info-title">Info:</h1>
+
+      <h2>Name: Maria Kailahti</h2>
+      <h2>Email: maria.kailahti@tuni.fi</h2>
+        <h3>
+          Course assigmment for webdev<br />
+          Copyright Maria Kailahti, 2023
+        </h3>
+    </div>
+    <div id="random">
+      
+    </div>
+  </div>
+
+    <!-- main page -->
+
+    <div id="mainpage"><h1>Latest 30 measurements:</h1></div>
+    <div id="firstpagestuff"> 
+      <div id="firstpage">
+        <table id="data-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Type</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <table id="data-table-2">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Type</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+  <!-- temperature page-->
+
+    <div id="secondpage">
+      <div id="secondpagestuff">
+        <h1>Temperatures:</h1>
+        <div>
+
+        <label for="tempselect">Time:</label>
+        <select id="tempselect">
+          <option value="">Now</option>
+          <option value="23">24h</option>
+          <option value="47">48h</option>
+          <option value="71">72h</option>
+          <option value="167">1 week</option>
+        </select>
+        </div>
+      </div>
+    </div>
+
+    <div id="temptable"> <canvas id="temperature-chart"></canvas>
+      <table id="tempdata">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Temperature (ºC)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+     
+    </div>
+
+    <!-- wind page-->
+
+    <div id="thirdpage">
+      <div id="thirdpagestuff">
+        <h1>Wind speed data:</h1>
+        <label for="windselect">Time:</label>
+        <select id="windselect">
+          <option value="">Now</option>
+          <option value="23">24h</option>
+          <option value="47">48h</option>
+          <option value="71">72h</option>
+          <option value="167">1 week</option>
+        </select>
+      </div>
+      <div id="windtable">
+        <canvas id="windchart"></canvas>
+
+        <table id="windspeedchart">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Wind speed(m/s)</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+<!-- more selection page page-->
+
+    <div id="more">
+      <div id="moreselect">
+        <h1>Choose a type</h1>
+        <label for="type">Type:</label>
+        <select id="type">          
+          <option value="temperature">Temperature</option>
+          <option value="humidity_in">Humidity in</option>
+          <option value="humidity_out">Humidity out</option>
+          <option value="rain">Rain</option>
+          <option value="wind_speed">Wind Speed</option>
+          <option value="wind_direction">Wind Direction</option>  
+          <option value="light">Light</option>          
+
+        </select>
+      </div>
+      <div id="moreselect2">
+        <label for="moretime">Time:</label>
+        <select id="moretime">
+          <option value="">Now</option>
+          <option value="23">24 hours</option>
+          <option value="47">48 hours</option>
+          <option value="71">72 hours</option>
+          <option value="167">1 week</option>
+        </select>
+      </div>
+      <div id="moretable">
+        <canvas id="morechart"></canvas>
+        <table id="moredata">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>The date</th>
+              <th>The time</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

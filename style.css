@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#weather-data {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+body {
+  font-family: Comic Sans MS;
+  background-color: #f2e3d0;
+}
+
+
+#titleID {
+  color: #b0c7dd;
+  font-size: 100px;
+  padding-left: 40px;
+  text-shadow: 2px 2px #453a52;
+}
+
+
+table {
+  border-collapse: collapse;
+  justify-content: flex-start;
+  flex: 0 0 30%;
+  text-align: center;
+  border:1px solid #423652;
+
+}
+
+th,
+td {
+  text-align: center;
+  padding: 8px;
+}
+
+thead {
+  background-color: pink;
+}
+
+th {
+  background-color: #f4ebde;
+  color: rgb(0, 0, 0);
+}
+
+tr:nth-child(even) {
+  background-color: #ffb4a2;
+}
+
+tr:nth-child(odd) {
+  background-color: #e5989b;
+}
+
+tr:hover {
+  background-color: #b5838d;
+}
+
+.button-links{
+  padding-top:20px;
+  display:flex;
+  justify-content: center;
+  margin-left:50px;
+  
+  
+}
+
+.button-links button{
+  background-color:#e5989b;
+  border:#b5838d;
+  color:white;
+  padding: 5px 10px;
+  margin-bottom:20px;
+  font-size: 20px; 
+  margin-right: 20px;
+  border-radius: 20px;
+  
+}
+
+.button-links button:hover{
+  cursor: pointer;
+  background-color: #ffb4a2;
+  transition:1s;
+  color:#6c6775;
+}
+
+
+#button-nav{
+  background-color:#b5838d;
+  -moz-box-shadow: 1px 2px 3px rgba(70,60,82,.5);
+  box-shadow: 1px 2px 3px rgba(70,60,82,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(70,60,82,.5);
+}
+/* main */ 
+
+
+#firstpagestuff{
+  display:flex;
+  
+}
+
+#firstpage {
+  color: white;
+  flex:1;
+  display:flex;
+  justify-content: center;
+}
+
+#mainpage {
+  padding-top:20px;
+  text-align: center;
+  color:#b0c7dd;
+  text-shadow: 1px 1px 1px grey;
+}
+
+#data-table{
+  margin-top:75px;
+  margin-left:50px;
+}
+
+#data-table-2 {
+  margin-top:75px;
+  margin-left:3rem;
+}
+
+/* temperature */
+
+#secondpage{
+  display: none;
+  margin-top:50px;
+  margin-bottom:50px;
+  margin-left:860px;
+  text-align: center;
+  color:white;
+  
+  
+}
+
+#secondpage h1{
+  text-align: left;
+  color:#b0c7dd;
+  text-shadow: 1px 1px 1px grey;
+  padding-bottom: 10px;
+}
+
+#temptable{
+  display:none; 
+  margin-left:50px;
+  color:white;
+  flex:1;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+#tempdata{
+  white-space: pre-wrap;
+  text-align: center;
+  color: white;
+  text-align: center;
+  justify-content: flex-end;
+  flex-basis: 30%;
+  margin-bottom: 10px;
+}
+
+
+
+#temperature-chart{
+  white-space: pre-wrap;
+  margin-right:50px;
+  align-items: flex-start;
+  width: 60% !important;
+  height: 60% !important;
+}
+
+#secondpagestuff{
+  text-align:center;
+  color:#b5838d;
+}
+/* interval select menu for temperature 2*/
+
+#tempselect {
+  background-color: #b5838d;
+  color:white;
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+
+/* wind speed */
+
+#thirdpage {
+  display:flex;
+  flex-direction: column;
+  display: none;
+  color:white;
+}
+
+#windchart {
+  margin-left:50px;
+  white-space: pre-wrap;
+  justify-content: flex-end;
+  width:60%!important;
+  height:60%!important;
+}
+
+#thirdpagestuff h1{
+  margin-bottom:10px;
+  padding-top:20px;
+  text-align: center;
+  color:#b0c7dd;
+  text-shadow: 1px 1px 1px grey;
+
+}
+
+#thirdpagestuff {
+  text-align: center;
+  color: #b5838d;
+  flex-basis: 50%
+}
+
+#windtable{
+  display:flex;
+}
+
+/* interval select 2*/
+
+#windselect {
+  background-color: #b5838d;
+  color:white;
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+#windselect label {
+  color:#b5838d;
+}
+
+/* more */
+
+#more {
+  display: none;
+  color: white;
+}
+
+#windspeedchart{
+  flex:1;
+  text-align: center;
+  margin-left:50px;
+  max-width:450px ;
+}
+
+
+
+/*more */
+
+#moreselect h1 {
+  margin-bottom:10px;
+  padding-top:20px;
+  text-align: center;
+  color:#b0c7dd; 
+   margin-bottom:15px;
+
+  text-shadow: 1px 1px 1px grey;
+}
+
+#moreselect{
+  margin-top:30px;
+  margin-bottom:5px;
+  text-align: center;
+  color:#b5838d;
+}
+
+#moreselect2{
+  text-align:center;
+  color:black;
+}
+
+#moreselect2 label {
+  color:#b5838d;
+}
+
+/* interval select thing for more */
+
+#type {
+  background-color: #b5838d;
+  color:white;
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+#moretime {
+  background-color: #b5838d;
+  color:white;
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+#type label {
+  color:#b5838d;
+}
+
+/*more table*/
+
+#moretable{
+  display:flex;
+  justify-content: center;
+}
+
+#moredata{
+  flex:1;
+  text-align: center;
+  margin-left:150px;
+  max-width:500px;
+}
+
+#morechart{
+  flex:1;
+  justify-content: center;
+  padding-left:50px;
+    max-height:600px ;
+
+  max-width:1000px ;
+}
+
+
+
+
+/* Info */
+
+#information {
+  display: none;
+  color:black;
+  margin-left: 100px;
+  margin-top: 40px;
+  width: 400px;
+  padding: 200px;
+  border: 5px solid #b5838d;
+  background-color: #e5989b;
+  border-radius: 20px;
+
+}
+
+#information2 {
+  color:#453b52;
+}
+
+#info-title{
+  text-align:center;
+  margin-bottom:10px;
+  padding-top:5px;
+  text-align: center;
+  color:#463C52;
+  text-shadow: 1px 1px 1px grey;
+}
+
+#information h1 {
+  padding-bottom: 100px;
+}
+
+#information h2 {
+  color: #463C52;
+}
+
+#information h3 {
+  color: #463C52;
+  padding-top: 100px;
+}
+
+#random {
+  display: none;
+  margin-left: 520px;
+  margin-top: 40px;
+  padding: 200px;
+  border: 5px solid #b5838d;
+  background-image: linear-gradient(to bottom right, #b5838d, #e5989b, #ffb4a2);
+  border-radius: 20px;
+}
+
+
+/* ... */
